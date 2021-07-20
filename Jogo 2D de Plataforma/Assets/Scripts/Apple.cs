@@ -19,13 +19,16 @@ public class Apple : MonoBehaviour
 
        
     void OnTriggerEnter2D (Collider2D collider)
-    {
+    { 
         if (collider.gameObject.tag == "Player")         
 
         {
             sr.enabled = false;
             circle.enabled = false;
             collected.SetActive(true);
+
+            GameController.instance.totalScore += Score;
+            GameController.instance.UpdateScoreText();
 
             Destroy(gameObject, 0.3f);
         }

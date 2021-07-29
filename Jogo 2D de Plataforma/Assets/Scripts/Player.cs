@@ -69,9 +69,9 @@ public class Player : MonoBehaviour
             {
                 if (doubleJump)
                 {
-                    rig.AddForce(new Vector2(0f, JumpForce * 2f), ForceMode2D.Impulse);
+                    rig.AddForce(new Vector2(0f, JumpForce ), ForceMode2D.Impulse);
                     doubleJump = false;
-                    anim.SetBool("jump", false);
+                    // anim.SetBool("jump", false);
                 }// Se eu pressionar novamente o pulo caio nessa condição ---- Evita que haja "pulos infinitos no ar"
             }
            
@@ -86,11 +86,16 @@ public class Player : MonoBehaviour
                 anim.SetBool("jump", false);
             }
 
-            if (collision.gameObject.layer == 8)
+            if (collision.gameObject.tag == "Spike")
             {
                 GameController.instance.ShowGameOver();
                 Destroy(gameObject);
             }  // Nessa função, ao detectar a colisão com os espinhos o gameObject (nosso personagem) é destruido 
+            if (collision.gameObject.tag == "Saw")
+            {
+                GameController.instance.ShowGameOver();
+                Destroy(gameObject);
+            }
         }
     
     void OnCollisionExit2D(Collider2D collision)

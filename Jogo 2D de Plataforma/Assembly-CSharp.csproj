@@ -58,9 +58,12 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Apple.cs" />
+    <Compile Include="Assets\Scripts\NextLvlPoint.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\FallingPlataform.cs" />
-    <Compile Include="Assets\Scripts\NextLvlPoint.cs" />
+    <Compile Include="Assets\Scripts\Trampoline.cs" />
+    <Compile Include="Assets\Scripts\Saw.cs" />
+    <Compile Include="Assets\Scripts\Villain.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

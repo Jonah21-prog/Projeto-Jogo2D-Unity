@@ -83,7 +83,14 @@ public class Player : MonoBehaviour
             if(collision.gameObject.layer == 8)
             {
                 isJumping = false;
+                anim.SetBool("jump", false);
             }
+
+            if (collision.gameObject.layer == 8)
+            {
+                GameController.instance.ShowGameOver();
+                Destroy(gameObject);
+            }  // Nessa função, ao detectar a colisão com os espinhos o gameObject (nosso personagem) é destruido 
         }
     
     void OnCollisionExit2D(Collider2D collision)

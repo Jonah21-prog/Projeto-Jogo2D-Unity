@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\Apple.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\FallingPlataform.cs" />
+    <Compile Include="Assets\Scripts\NextLvlPoint.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -31,7 +31,7 @@ public class FallingPlataform : MonoBehaviour
     }
     void Falling()
     {
-        target.enable = false;
-        BoxColl.isTrigger= true
+        target.enabled = false;
+        BoxColl.isTrigger = true;
     }
 }

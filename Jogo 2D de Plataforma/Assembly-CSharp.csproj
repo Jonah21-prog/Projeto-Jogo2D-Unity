@@ -56,14 +56,15 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Trampoline.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Apple.cs" />
     <Compile Include="Assets\Scripts\NextLvlPoint.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\FallingPlataform.cs" />
-    <Compile Include="Assets\Scripts\Trampoline.cs" />
     <Compile Include="Assets\Scripts\Saw.cs" />
     <Compile Include="Assets\Scripts\Villain.cs" />
+    <Compile Include="Assets\Scripts\AudioController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
